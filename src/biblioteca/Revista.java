@@ -1,5 +1,5 @@
 package biblioteca;
-
+//SUB-KIND
 public class Revista extends Publicacao {
     private int periodicidadeEmDias;
 

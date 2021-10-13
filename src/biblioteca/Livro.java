@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.HashSet;
-
+//SUB-KIND
 public class Livro extends Publicacao {
     private String ISBN;
     private Set<Autor> autores;

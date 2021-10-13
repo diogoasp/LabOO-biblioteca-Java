@@ -1,5 +1,5 @@
 package biblioteca;
-
+//MIXIN?
 public abstract class DomainObject {
     private long id;
 

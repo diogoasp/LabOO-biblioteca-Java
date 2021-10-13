@@ -1,5 +1,5 @@
 package biblioteca;
-
+//KIND
 public abstract class Publicacao extends DomainObject{
     private String titulo;
     private int numExemplares;
