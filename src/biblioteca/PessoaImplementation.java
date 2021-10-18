@@ -4,6 +4,7 @@ package biblioteca;
 //Implementa as interfaces Aluno, Autor e, implicitamente, Pessoa
 public class PessoaImplementation extends DomainObject implements Aluno, Autor{
     public String nome;
+    //Poderia usar o Factory!
     Aluno aluno;
     Autor autor;
 
@@ -36,12 +37,12 @@ public class PessoaImplementation extends DomainObject implements Aluno, Autor{
     public void sejaUmAluno(String matricula){
         if(this.isAluno())
             throw new IllegalStateException("Já sou Aluno.");
-        this.aluno = (Aluno) new AlunoImplementation(matricula);
+        this.aluno = PessoaFactory.obterAluno(matricula);
     }
     public void sejaUmAutor(String biografia){
         if(this.isAutor())
             throw new IllegalStateException("Já sou Autor.");
-        this.autor = (Autor) new AutorImplementation(biografia);
+        this.autor = PessoaFactory.obterAutor(biografia);
     }
 
     @Override
